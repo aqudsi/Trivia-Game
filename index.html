@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <link rel ="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	<title>Trivia Game</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+     <h1>Dragon Ball Z Trivia!</h1>      
+    </div>
+  </div> 
+    
+   <div class="row">
+    <button type="button" class="btn-primary">Start Game</button>
+    </div>
+    
+    <div class="row">
+    <div class="results"></div>
+    </div>
+    <div class="row">
+    <button type="button" class="btn-xl">Restart?</button>
+    </div>
+    <div class="row">
+     <div id="timer"></div>
+    </div>
+
+
+    <div id="trivia">
+ 
+     <div class="row">
+      <div id="question1"></div>
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option1" vale="1" class="answer"> Earth
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option1" value="2" class="answer"> King Kai's Planet
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option1" value="3" class="answer"> Namek
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option1" value ="4" class="answer"> Planet Vegeta
+      </div> 
+     </div>
+     
+
+     <div class="row">
+      <div id="question2">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option2" value="1" class="answer"> Krillin
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option2" value="3" class="answer"> Bulma
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option2" value="2" class="answer"> Master Roshi
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option2" value ="4" class="answer"> Yamcha
+      </div> 
+     </div>
+     
+
+     <div class="row">
+      <div id="question3">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option3" value="1" class="answer"> King Vegeta
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option3" value="2" class="answer"> Goku Sr.
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option3" value="4" class="answer"> Goten
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option3" value ="3" class="answer"> Gohan
+      </div> 
+     </div>
+    
+
+     <div class="row">
+      <div id="question4">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option4" value="1" class="answer"> Goten
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option4" value="2" class="answer"> Gohan
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option4" value="3" class="answer"> Pan
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option4" value ="4" class="answer"> Videl
+      </div> 
+     </div>
+    
+      
+     <div class="row">
+      <div id="question5">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option5" value="3" class="answer"> 4-Star Dragon Ball
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option5" value="2" class="answer"> 7-Star Dragon Ball
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option5" value="1" class="answer"> 1-Star Dragon Ball
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option5" value ="4" class="answer"> 3-Star Dragon Ball
+      </div> 
+     </div>
+    
+
+     <div class="row">
+      <div id="question6">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option6" value="1" class="answer"> Frieza
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option6" value="2" class="answer"> Cell
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option6" value="3" class="answer"> Majin Buu
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option6" value ="4" class="answer"> Vegeta
+      </div> 
+     </div>
+     
+
+     <div class="row">
+      <div id="question7">
+     </div>
+
+     <div class="row">
+      <div class="col-md-3">
+       <input type="radio" name="option7" value="1" class="answer"> Kamehameha Wave
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option7" value="2" class="answer"> Super Dragon Fist
+      </div>
+      <div class="col-md-3">
+       <input type="radio" name="option7" value="4" class="answer"> By fusing with Vegeta
+      </div>
+      <div class="col-md-3"> 
+       <input type="radio" name="option7" value ="3" class="answer"> Super Spirit Bomb
+      </div> 
+     </div>
+    
+    <div class="row">
+    <button type="button" class="btn-lg">Finished!</button>
+    </div>
+    
+</div>
+
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/trivia.js">
+
+    </script>
+        
+</body>
+</html>

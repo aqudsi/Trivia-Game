@@ -1,0 +1,81 @@
+directions:
+You'll create a trivia form with multiple choice or true/false options (your choice).
+The player will have a limited amount of time to finish the quiz.
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+Don't let the player pick more than one answer per question.
+Don't forget to include a countdown timer.
+
+psuedocode:
+-use a bootstrap form, 5 true/false multiple choice style questions
+-create a startGame() function, which will have the contents of the entire 
+game in it. this main function will have a timer associated with it, so that
+when the timer runs out, another function gameOver() will be called, which ends the game
+-using a series of conditional statements, check to see if the user enters the right answer, and add to the right and wrong answer counters. if the user does not 
+respond to a question, add to the unanswered counter. display these on the game over screen
+-set all the wrong answers to false, and the right answer to true.
+-onclick="myFunction()" use this and jquery so that when the user
+clicks on the right answer, it sets userAnswer = true;
+
+variables: 
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
+
+functions:
+startGame()- starts the game and displays the questions
+questions()- will be called after startGame, houses all the questions,
+and the logic for recording correct and wrong answers, as well as unanswered
+gameOver()- ends the game, and displays the number of correct answers, wrong 
+answers, and unanswered questions
+built-in: setInterval(), clearInterval(), timeOut()
+
+  <div class="row">
+    <div id="question">What allows Android 19 to overpower Goku during their battle?</div>
+  </div> 
+  <div class="row">
+   <form>
+   <div class="col-md-3">
+    <label class="radio-inline">
+      <input type="radio" name="option">Android 19's Ki-Absorbing hand
+    </label>
+   </div>
+   <div class="col-md-3"> 
+    <label class="radio-inline">
+      <input type="radio" name="option">Goku is weakened by a heart virus
+    </label>
+   </div>
+   <div class="col-md-3">
+    <label class="radio-inline">
+      <input type="radio" name="option">Android 19 has help from Android 17 and 18
+    </label>
+   </div>
+   <div class="col-md-3"> 
+    <label class="radio-inline">
+      <input type="radio" name="option">Android 19 absorbs energy from Vegeta before their fight
+    </label>
+   </div> 
+   </form>
+  </div>
+
+
+   <div class="row">
+      <div id="question1"></div>
+    </div>
+    <div class="row">
+      <div id="question2"></div>
+    </div>
+    <div class="row">
+      <div id="question3"></div>
+    </div>
+    <div class="row">
+      <div id="question4"></div>
+    </div>
+    <div class="row">
+      <div id="question5"></div>
+    </div>
+    <div class="row">
+      <div id="question6"></div>
+    </div>
+    <div class="row">
+      <div id="question7"></div>
+    </div>

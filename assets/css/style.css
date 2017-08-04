@@ -1,0 +1,111 @@
+body
+{
+	background-image: url("http://wallpapercave.com/wp/9oFURJs.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.row
+{
+	padding:10px;
+	margin:20px;
+	font-size: 24px;
+	text-align: center;
+}
+.container
+{
+	background-color: black;
+	color:orange;
+	opacity:.9;
+}
+.results
+{
+	color:orange;
+}
+.jumbotron
+{
+	background-color:black;
+}
+#timer
+{
+	font-size: 75px;
+}
+button.btn-primary
+{
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color:orange;
+    color:orange;
+}
+
+button.button-lg
+{
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color:orange;
+    color:black;
+}
+
+button.button-xl
+{
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color:orange;
+    color:black;
+}
+
+.results
+{
+	font-size: 24px
+}
+
+#question1
+{
+	color:green;
+	font-size: 40px
+}
+
+#question2
+{
+	color:green;
+	font-size: 40px
+}
+
+
+#question3
+{
+	color:green;
+	font-size: 40px
+}
+
+
+#question4
+{
+	color:green;
+	font-size: 40px
+}
+
+#question5
+{
+	color:green;
+	font-size: 40px
+}
+
+#question6
+{
+	color:green;
+	font-size: 40px
+}
+
+#question7
+{
+	color:green;
+	font-size: 40px
+}
+
+
+
